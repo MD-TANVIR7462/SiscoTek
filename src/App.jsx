@@ -14,6 +14,8 @@ const App = () => {
       <CategoryMain></CategoryMain>
       <HeroSection></HeroSection>
       <Perallax></Perallax>
+      <CategoryMain></CategoryMain>
+      <HeroSection></HeroSection>
     </div>
   );
 };

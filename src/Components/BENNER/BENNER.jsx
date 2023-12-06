@@ -59,7 +59,7 @@ const BENNER = ({ img }) => {
               </a>
               <a
                 href="#_"
-                class="relative px-4 md:px-5  py-2 md:py-3 overflow-hidden font-medium hover:border-none rounded-none text-white border border-gray-100 rounded-lg shadow-inner group"
+                class="relative px-4 md:px-5  py-2 md:py-3 overflow-hidden font-medium hover:border-none rounded-none text-white border border-gray-100  shadow-inner group"
               >
                 <span class="absolute top-0 left-0 w-0 h-0 transition-all duration-200 border-t-2 border-gray-900 group-hover:w-full ease"></span>
                 <span class="absolute bottom-0 right-0 w-0 h-0 transition-all duration-200 border-b-2 border-gray-900 group-hover:w-full ease"></span>
