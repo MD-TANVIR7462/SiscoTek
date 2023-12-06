@@ -1,8 +1,10 @@
-'use server';
+'use client';
 
 
 
-import React, { useRef, useState } from 'react';
+
+
+
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -46,4 +48,4 @@ const BENNERMAIN = () => {
 
 // eslint-disable-next-line react-refresh/only-export-components
 export default BENNERMAIN;
-// https://i.ibb.co/VJWc40j/high-angle-city-streets-park.jpg
+
