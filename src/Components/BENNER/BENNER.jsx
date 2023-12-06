@@ -1,22 +1,23 @@
+'use client';
+
 const BENNER = ({ img }) => {
   return (
     <>
       <div
-        className="bg-cover  bg-center md:w-full md:min-h-[700px] min-h-[380px]   flex justify-center items-center  md:bg-opacity-90"
+        className="bg-cover bg-center md:w-full md:min-h-[700px] min-h-[440px]   flex justify-center items-center  md:bg-opacity-90"
         style={{
           backgroundImage: `url(${img})`,
 
-          // backgroundColor: "rgba(0, 0, 0, 0.10)",
-          // backdropFilter: "blur(10px)",
+         
         }}
       >
-        <div className="text-center md:flex hero-overlay  bg-opacity-40  md:min-h-[860px] items-center w-[100%] mx-auto">
-          <div className="max-w-3xl  mx-auto mt-12">
+        <div className="text-center md:flex hero-overlay  bg-opacity-50 min-h-[500px]   md:min-h-[860px] items-center w-[100%]  mx-auto">
+          <div className="max-w-3xl  mx-auto  mt-[40%] md:mt-12">
             <p className="md:text-6xl text-3xl  font-semibold text-white">
               We build foundation and superstructures
             </p>
 
-            <p className="my-8 text-sm text-white md:text-base ">
+            <p className="my-5 md:my-8 text-sm text-white md:text-base ">
               KARTEL is the leading construction company on the market. We are
               trusted partners of both small and international companies located
               worldwide.
@@ -24,9 +25,9 @@ const BENNER = ({ img }) => {
             <div className="flex justify-center items-center gap-5 ">
             <a
                 href="#_"
-                class="relative px-10 py-3 font-medium text-white transition duration-300 bg-yellow-400  rounded-md hover:bg-yellow-600  ease"
+                class="relative px-4 md:px-10 py-2 md:py-3 rounded-nonefont-medium text-white transition duration-300 bg-yellow-400   hover:bg-yellow-600  ease"
               >
-                <span class="absolute bottom-0 left-0 h-full -ml-2">
+                <span class="absolute bottom-0 left-0 h-full -ml-2 ">
                   <svg
                     viewBox="0 0 487 487"
                     class="w-auto h-full opacity-100 object-stretch"
@@ -58,7 +59,7 @@ const BENNER = ({ img }) => {
               </a>
               <a
                 href="#_"
-                class="relative px-5 py-3 overflow-hidden font-medium text-white border border-gray-100 rounded-lg shadow-inner group"
+                class="relative px-4 md:px-5  py-2 md:py-3 overflow-hidden font-medium hover:border-none rounded-none text-white border border-gray-100 rounded-lg shadow-inner group"
               >
                 <span class="absolute top-0 left-0 w-0 h-0 transition-all duration-200 border-t-2 border-gray-900 group-hover:w-full ease"></span>
                 <span class="absolute bottom-0 right-0 w-0 h-0 transition-all duration-200 border-b-2 border-gray-900 group-hover:w-full ease"></span>
