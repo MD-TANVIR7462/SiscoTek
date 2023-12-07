@@ -13,11 +13,11 @@ const BENNER = ({ img }) => {
       >
         <div className="text-center md:flex hero-overlay  bg-opacity-50 min-h-[500px]   md:min-h-[860px] items-center w-[100%]  mx-auto">
           <div className="max-w-3xl  mx-auto  mt-[40%] md:mt-12">
-            <p className="md:text-6xl text-3xl  font-semibold text-white">
+            <p className="md:text-5xl lg:text-6xl text-3xl  font-semibold text-white">
               We build foundation and superstructures
             </p>
 
-            <p className="my-5 md:my-8 text-sm text-white md:text-base ">
+            <p className="my-5 md:my-8 text-sm px-[5%] text-white md:text-base ">
               KARTEL is the leading construction company on the market. We are
               trusted partners of both small and international companies located
               worldwide.

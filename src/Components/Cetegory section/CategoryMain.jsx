@@ -4,7 +4,7 @@ import Category from "./Category";
 
 const CategoryMain = () => {
   return (
-    <div className="my-12 md:w-[60%] lg:w-[77%] mx-auto grid lg:grid-cols-2 gap-5">
+    <div className="my-12 w-[90%] md:w-[60%] lg:w-[77%] mx-auto grid  lg:grid-cols-2 md:gap-5">
       <Category
         text={"Foundation"}
         discription={
@@ -38,7 +38,3 @@ const CategoryMain = () => {
 };
 
 export default CategoryMain;
-// https://i.ibb.co/qLGtvj2/istockphoto-897664288-2048x2048.jpg
-// https://i.ibb.co/McddhX1/istockphoto-1346403814-2048x2048.jpg
-// https://i.ibb.co/nmbm4qQ/istockphoto-1443177554-2048x2048.jpg
-// https://i.ibb.co/jymBYc3/istockphoto-1470161618-2048x2048.jpg

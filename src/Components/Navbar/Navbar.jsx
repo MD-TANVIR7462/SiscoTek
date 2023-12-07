@@ -27,32 +27,32 @@ const NavBar = () => {
   const navitems = (
     <>
      <a >
-     <li className="text-white font-semibold text-xl">
+     <li className=" text-white lg:text-yellow-400 hover:bg-gray-700    rounded-md font-semibold text-xl">
         <a>Home</a>
       </li>
      </a>
      <a >
-     <li className="text-white font-semibold text-xl">
+     <li className=" text-white lg:text-yellow-400 hover:bg-gray-700   rounded-md font-semibold text-xl">
         <a>Why Us</a>
       </li>
      </a>
      <a >
-     <li className="text-white font-semibold text-xl">
+     <li className=" text-white lg:text-yellow-400 hover:bg-gray-700  rounded-md font-semibold text-xl">
         <a>Services</a>
       </li>
      </a>
      <a >
-     <li className="text-white font-semibold text-xl">
+     <li className=" text-white lg:text-yellow-400 hover:bg-gray-700    rounded-md font-semibold text-xl">
         <a>Projects</a>
       </li>
      </a>
      <a >
-     <li className="text-white font-semibold text-xl">
+     <li className=" text-white lg:text-yellow-400 hover:bg-gray-700   rounded-md font-semibold text-xl">
         <a>About Us</a>
       </li>
      </a>
      <a >
-     <li className="text-white font-semibold text-xl">
+     <li className=" text-white lg:text-yellow-400 hover:bg-gray-700    rounded-md font-semibold text-xl">
         <a>Contact Us</a>
       </li>
      </a>
@@ -93,9 +93,9 @@ const NavBar = () => {
           
           <ul
             tabIndex={0}
-            className="menu menu-md dropdown-content mt-3 z-[1] p-2 shadow  rounded-box w-52"style={
+            className="menu menu-md md:menu-lg dropdown-content mt-3 z-[1] p-2 shadow  rounded-box w-52"style={
                 {
-                     backgroundColor: "	#000000",
+                     backgroundColor: "	#30246c",
                      backdropFilter: "blur(200px)",
                    }
               
@@ -106,8 +106,8 @@ const NavBar = () => {
         </div>
 
       </div>
-      <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-lg menu-horizontal px-5">{navitems}</ul>
+      <div className="navbar-center hidden lg:flex ">
+        <ul className="menu  menu-lg menu-horizontal gap-2 px-5">{navitems}</ul>
       </div>
       <div className="navbar-end">
        
