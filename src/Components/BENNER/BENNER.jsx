@@ -1,29 +1,50 @@
-'use client';
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const BENNER = ({ img }) => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+  }, []);
   return (
     <>
       <div
         className="bg-cover bg-center md:w-full md:min-h-[700px] min-h-[440px]   flex justify-center items-center  md:bg-opacity-90"
         style={{
           backgroundImage: `url(${img})`,
-
-         
         }}
       >
         <div className="text-center md:flex hero-overlay  bg-opacity-50 min-h-[500px]   md:min-h-[860px] items-center w-[100%]  mx-auto">
           <div className="max-w-3xl  mx-auto  mt-[40%] md:mt-12">
-            <p className="md:text-5xl lg:text-6xl text-3xl  font-semibold text-white">
+            <p
+              className="md:text-5xl lg:text-6xl text-3xl  font-semibold text-white"
+              data-aos="fade-down"
+              data-aos-duration="1000"
+              data-aos-mirror="true"
+              data-aos-once="false"
+            >
               We build foundation and superstructures
             </p>
 
-            <p className="my-5 md:my-8 text-sm px-[5%] text-white md:text-base ">
+            <p
+              className="my-5 md:my-8 text-sm px-[5%] text-white md:text-base "
+              data-aos="fade-down"
+              data-aos-duration="1000"
+              data-aos-mirror="true"
+              data-aos-once="false"
+            >
               KARTEL is the leading construction company on the market. We are
               trusted partners of both small and international companies located
               worldwide.
             </p>
             <div className="flex justify-center items-center gap-5 ">
-            <a
+              <a
+                data-aos="zoom-out"
+                data-aos-duration="1000"
+                data-aos-mirror="true"
+                data-aos-once="false"
                 href="#_"
                 class="relative px-4 md:px-10 py-2 md:py-3 rounded-nonefont-medium text-white transition duration-300 bg-yellow-400   hover:bg-yellow-600  ease"
               >
@@ -58,6 +79,10 @@ const BENNER = ({ img }) => {
                 <span class="relative">OUR SERVICES</span>
               </a>
               <a
+                data-aos="zoom-out"
+                data-aos-duration="1000"
+                data-aos-mirror="true"
+                data-aos-once="false"
                 href="#_"
                 class="relative px-4 md:px-5  py-2 md:py-3 overflow-hidden font-medium hover:border-none rounded-none text-white border border-gray-100  shadow-inner group"
               >
@@ -70,7 +95,6 @@ const BENNER = ({ img }) => {
                   GET IN TOUCH
                 </span>
               </a>
-           
             </div>
           </div>
         </div>

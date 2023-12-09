@@ -2,6 +2,7 @@
 
 
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 
 const NavBar = () => {
@@ -26,16 +27,16 @@ const NavBar = () => {
 
   const navitems = (
     <>
-     <a >
+     <Link to={'/'}   >
      <li className=" text-white lg:text-yellow-400 hover:bg-gray-700    rounded-md font-semibold text-xl">
         <a>Home</a>
       </li>
-     </a>
-     <a >
+     </Link  >
+     <Link to={"/why-us"}  >
      <li className=" text-white lg:text-yellow-400 hover:bg-gray-700   rounded-md font-semibold text-xl">
         <a>Why Us</a>
       </li>
-     </a>
+     </Link >
      <a >
      <li className=" text-white lg:text-yellow-400 hover:bg-gray-700  rounded-md font-semibold text-xl">
         <a>Services</a>
