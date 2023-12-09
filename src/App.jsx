@@ -1,4 +1,3 @@
-'use client';
 
 import BENNERMAIN from "./Components/BENNER/BENNERMAIN";
 import CategoryMain from "./Components/Cetegory section/CategoryMain";
