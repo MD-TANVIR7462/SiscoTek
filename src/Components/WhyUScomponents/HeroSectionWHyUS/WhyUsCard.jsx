@@ -1,7 +1,7 @@
 import React from 'react';
 
 const WhyUsCard = ({data}) => {
-    console.log(data);
+   
     return (
         <div className="card rounded-none grid xl:grid-cols-2  w-[92%] p-2 md:w-[90%]  lg:w-[85%] xl:w-[80%] mx-auto gap-[2%]  shadow-md md:p-5  ">
       <figure className='md:order-2'>

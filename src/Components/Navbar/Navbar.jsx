@@ -37,11 +37,11 @@ const NavBar = () => {
         <a>Why Us</a>
       </li>
      </Link >
-     <a >
+     <Link to={'/services'} >
      <li className=" text-white lg:text-yellow-400 hover:bg-gray-700  rounded-md font-semibold text-xl">
         <a>Services</a>
       </li>
-     </a>
+     </Link>
      <a >
      <li className=" text-white lg:text-yellow-400 hover:bg-gray-700    rounded-md font-semibold text-xl">
         <a>Projects</a>

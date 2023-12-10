@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import HOME from './Components/Home/HOME.jsx';
 import WhyUsPage from './Components/WhyUsPage/WhyUsPage.jsx';
+import Services from './Components/ServicesPage/Services.jsx';
 
 
 
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
       {
         path:"/why-us",
         element:<WhyUsPage></WhyUsPage>
+      },
+      {
+        path:"/services",
+        element:<Services></Services>
       }
     ]
   },
