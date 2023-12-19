@@ -27,7 +27,7 @@ const SponsorsSection = () => {
     { _id: "brand0d4", url: "https://i.ibb.co/3N4rCHD/brand-04-133x90-1.png" },
   ];
   return (
-    <div className="px-aut md:py-12  w-[60%]  md:w-[90%] mx-auto">
+    <div className=" pb-4 md:pb-0  md:py-12  w-[60%]  md:w-[90%] mx-auto">
       <Swiper
       
         slidesPerView={1}
@@ -61,7 +61,7 @@ const SponsorsSection = () => {
           <SwiperSlide key={item._id} >
             <img
               src={item.url}
-              alt=""
+             
           
               className="w-[70%] h-[100px] md:h-[90px] lg:h-[100px] mx-auto mb-3 md:w-[90%] lg:w-full"
             />

@@ -1,12 +1,13 @@
 import React from 'react';
 import { Parallax } from 'react-parallax';
 
-const ServicesBenner = () => {
+const ServicesBenner = ({img}) => {
     return (
         <>
         <Parallax
-     bgImage="https://i.ibb.co/4fw0wcB/banner-services.jpg"
+     bgImage={img}
      strength={300}
+
    >
 <div className="text-center md:flex hero-overlay  bg-opacity-50 min-h-[200px]   md:min-h-[380px] items-center w-[100%]  mx-auto">
            

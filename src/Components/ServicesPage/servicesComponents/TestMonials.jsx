@@ -15,14 +15,14 @@ const TestMonials = () => {
         }
     ]
   return (
-    <div className="my-20">
+    <div className="my-12 md:my-16 lg:my-20">
       <p className="text-sm text-gray-500 text-center md:text-start font-semibold ">
         TESTIMONIALS
       </p>
       <h1 className="text-2xl md:text-4xl font-semibold mt-1 text-center md:text-start mb-8 md:mb-12 ">
         What clients say about our company
       </h1>
-      <div className="grid grid-cols-2 gap-5">
+      <div className="grid m-6 sm:m-12 md:m-0 md:grid-cols-2 gap-5">
         {
             testimonials.map(testmonial=><TestmonialsCard testmonial={testmonial}></TestmonialsCard>)
         }

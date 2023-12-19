@@ -42,11 +42,11 @@ const NavBar = () => {
         <a>Services</a>
       </li>
      </Link>
-     <a >
+     <Link to={"/projects"}>
      <li className=" text-white lg:text-yellow-400 hover:bg-gray-700    rounded-md font-semibold text-xl">
         <a>Projects</a>
       </li>
-     </a>
+     </Link >
      <a >
      <li className=" text-white lg:text-yellow-400 hover:bg-gray-700   rounded-md font-semibold text-xl">
         <a>About Us</a>

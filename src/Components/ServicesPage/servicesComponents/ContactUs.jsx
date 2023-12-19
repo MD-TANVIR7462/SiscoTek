@@ -2,7 +2,7 @@ import React from "react";
 
 const ContactUs = () => {
   return (
-    <div className="bg-gray-100 px-[10%] py-[5%] my-12">
+    <div className="bg-gray-100 px-[2%] sm:px-[3%] md:px-[5%] lg:px-[10%] py-[5%] my-12">
       <h1 className="text-sm text-gray-500 text-center md:text-start font-semibold ">
         CONTACT US
       </h1>
@@ -12,8 +12,8 @@ const ContactUs = () => {
       </p>
       <form className=" 00">
    
-      <div className="grid grid-cols-3 gap-5 boder">
-      <div className="flex gap-12 flex-col">
+      <div className="grid  md:grid-cols-2 lg:grid-cols-3 gap-5 boder">
+      <div className="flex gap-5 md:gap-12 flex-col">
        
        <input
          type="text"
@@ -32,7 +32,7 @@ const ContactUs = () => {
          className="input "
        />
      </div>
-     <div className="flex gap-12 flex-col">
+     <div className="flex gap-5 md:gap-12 flex-col">
     
        <input
          type="text"
@@ -51,7 +51,7 @@ const ContactUs = () => {
          className="input "
        />
      </div>
-     <textarea placeholder="Message" className="textarea textarea-bordered textarea-md w-full max-w-xs" ></textarea>
+     <textarea placeholder="Message" className="textarea textarea-bordered textarea-md w-full max-w-lg " ></textarea>
       </div>
       
       
@@ -59,8 +59,8 @@ const ContactUs = () => {
         
        <p className="my-8">
        <a
-            href="#_"
-            class="relative px-4 md:px-5  py-2 md:py-3 overflow-hidden font-medium hover:border-none rounded-none text-black border border-black  shadow-inner group"
+      
+            class="relative cursor-pointer px-4 md:px-5  py-2 md:py-3 overflow-hidden font-medium hover:border-none rounded-none text-black border border-black  shadow-inner group"
           >
             <span class="absolute top-0 left-0 w-0 h-0 transition-all duration-200 border-t-2 border-gray-900 group-hover:w-full ease"></span>
             <span class="absolute bottom-0 right-0 w-0 h-0 transition-all duration-200 border-b-2 border-gray-900 group-hover:w-full ease"></span>

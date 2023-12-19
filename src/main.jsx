@@ -9,6 +9,7 @@ import {
 import HOME from './Components/Home/HOME.jsx';
 import WhyUsPage from './Components/WhyUsPage/WhyUsPage.jsx';
 import Services from './Components/ServicesPage/Services.jsx';
+import ProjectPage from './Components/ProjectsPage/ProjectPage.jsx';
 
 
 
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
       {
         path:"/services",
         element:<Services></Services>
+      },
+      {
+        path:"/projects",
+        element:<ProjectPage></ProjectPage>
       }
     ]
   },

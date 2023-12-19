@@ -9,8 +9,8 @@ import SponcersSection from "./servicesComponents/SponcersSection";
 const Services = () => {
   return (
     <>
-      <ServicesBenner></ServicesBenner>
-      <div className="w-[92%] p-2 md:w-[90%] mx-auto lg:w-[85%] xl:w-[80%]">
+      <ServicesBenner img={"https://i.ibb.co/4fw0wcB/banner-services.jpg"}></ServicesBenner>
+      <div className="p-2 md:w-[90%] mx-auto lg:w-[85%] xl:w-[80%]">
         <ServicesHero></ServicesHero>
         <ServicesCard></ServicesCard>
         <TestMonials></TestMonials>
