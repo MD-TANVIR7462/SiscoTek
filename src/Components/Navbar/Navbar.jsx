@@ -1,9 +1,7 @@
-'use server';
-
-
+import { MagnifyingGlass } from "phosphor-react";
+import { Navbar, Button } from "keep-react";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-
 
 const NavBar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -27,95 +25,77 @@ const NavBar = () => {
 
   const navitems = (
     <>
-     <Link to={'/'}   >
-     <li className=" text-white lg:text-yellow-400 hover:bg-gray-700    rounded-md font-semibold text-xl">
-        <a>Home</a>
-      </li>
-     </Link  >
-     <Link to={"/why-us"}  >
-     <li className=" text-white lg:text-yellow-400 hover:bg-gray-700   rounded-md font-semibold text-xl">
-        <a>Why Us</a>
-      </li>
-     </Link >
-     <Link to={'/services'} >
-     <li className=" text-white lg:text-yellow-400 hover:bg-gray-700  rounded-md font-semibold text-xl">
-        <a>Services</a>
-      </li>
-     </Link>
-     <Link to={"/projects"}>
-     <li className=" text-white lg:text-yellow-400 hover:bg-gray-700    rounded-md font-semibold text-xl">
-        <a>Projects</a>
-      </li>
-     </Link >
-     <a >
-     <li className=" text-white lg:text-yellow-400 hover:bg-gray-700   rounded-md font-semibold text-xl">
-        <a>About Us</a>
-      </li>
-     </a>
-     <a >
-     <li className=" text-white lg:text-yellow-400 hover:bg-gray-700    rounded-md font-semibold text-xl">
-        <a>Contact Us</a>
-      </li>
-     </a>
+      <Link to={"/"} >
+       <p className="text-white  px-auto lg:text-lg hover:bg-white rounded-sm  py-[1dvh] hover:text-black  px-[3dvw] ">Home</p>
+      </Link>
+      <Navbar.Divider></Navbar.Divider>
+      <Link to={"/why-us"}>
+      <p className="text-white  px-auto lg:text-lg hover:bg-white rounded-sm  py-[1dvh] hover:text-black  px-[3dvw] ">Why US</p>
+      </Link>
+      <Navbar.Divider></Navbar.Divider>
+      <Link to={"/services"}>
+     <p className="text-white  px-auto lg:text-lg hover:bg-white rounded-sm  py-[1dvh] hover:text-black  px-[3dvw] ">Services</p>
+      </Link>
+      <Navbar.Divider></Navbar.Divider>
+      <Link to={"/projects"}>
+     <p className="text-white  px-auto lg:text-lg hover:bg-white rounded-sm  py-[1dvh] hover:text-black  px-[3dvw] ">Projects</p>
+      </Link>
+      <Navbar.Divider></Navbar.Divider>
+      <Link to={"/about-us"}>
+     <p className="text-white  px-auto lg:text-lg hover:bg-white rounded-sm  py-[1dvh] hover:text-black  px-[3dvw] ">About Us</p>
+      </Link>
+      <Navbar.Divider></Navbar.Divider>
+      <Link to={"/contact-us"}>
+         <p className="text-white  px-auto lg:text-lg hover:bg-white rounded-sm  py-[1dvh] hover:text-black  px-[3dvw] ">Contact Us</p>
+      </Link>
+
     </>
   );
   return (
-    <div 
-      className={`navbar  ${
-        isScrolled ? "shadow-2xl" : "bg-none"
-      } md:py-6 md:px-16 fixed top-0 z-10`}
-      style={
-         {
-              backgroundColor: "rgba(255, 255, 255, 0.1)",
-              backdropFilter: "blur(10px)",
-            }
-       
-      }
+    <Navbar
+      fluid={true}
+      className=" fixed w-full   top-0 z-10 bg-gray-600 md:bg-blue-950  backdrop-blur-10"
     >
-      <div className="navbar-start">
-        <div className="dropdown">
-          <label tabIndex={0} className="btn btn-ghost lg:hidden">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-8 w-8 text-black"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M4 6h16M4 12h8m-8 6h16"
-              />
-            </svg>
-          </label>
-
-          
-          <ul
-            tabIndex={0}
-            className="menu menu-md md:menu-lg dropdown-content mt-3 z-[1] p-2 shadow  rounded-box w-52"style={
-                {
-                     backgroundColor: "	#30246c",
-                     backdropFilter: "blur(200px)",
-                   }
-              
-             }
+      <Navbar.Container className="flex items-center  justify-between ">
+      <Navbar.Toggle className="!text-white" />
+        <Navbar.Container className="flex items-center mx-auto ">
+    
+     
+          <Navbar.Container
+            tag="ul"
+            className="lg:flex hidden items-center justify-between py-[2%] "
           >
-            {navitems}
-          </ul>
-        </div>
+           {
+            navitems
+           }
+          </Navbar.Container>
+          <Navbar.Collapse collapseType="sidebar">
+            <Navbar.Container tag="ul" className="flex flex-col gap-5">
+            <Navbar.Link  linkName="Home" href="/why-us" />
+            <Navbar.Link linkName="Projects" />
+            <Navbar.Link linkName="Blogs" />
+            <Navbar.Link linkName="News" />
+            <Navbar.Link linkName="Resources" />
+            </Navbar.Container>
+          </Navbar.Collapse>
+        </Navbar.Container>
 
-      </div>
-      <div className="navbar-center hidden lg:flex ">
-        <ul className="menu  menu-lg menu-horizontal gap-2 px-5">{navitems}</ul>
-      </div>
-      <div className="navbar-end">
-       
-      </div>
-    </div>
+        <Navbar.Container className="flex gap-2">
+     
+
+        
+        </Navbar.Container>
+      </Navbar.Container>
+    </Navbar>
   );
 };
 
 export default NavBar;
-
+   {/* <Navbar.Brand>
+            <img
+              src="https://i.ibb.co/RPLfPCd/Kartel.png"
+              alt="keep"
+              width="100"
+              height="40"
+            />
+          </Navbar.Brand> */}
