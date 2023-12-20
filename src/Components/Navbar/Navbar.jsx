@@ -26,62 +26,65 @@ const NavBar = () => {
   const navitems = (
     <>
       <Link to={"/"} >
-       <p className="text-white  px-auto lg:text-lg hover:bg-white rounded-sm  py-[1dvh] hover:text-black  px-[3dvw] ">Home</p>
+      <p className=" text-white cursor-pointer py-2 px-1 xl:text-lg  hover:bg-white rounded-sm  lg:py-[1dvh] hover:text-black  lg:px-[3dvw] hover:font-semibold ">Home</p>
       </Link>
+      
       <Navbar.Divider></Navbar.Divider>
       <Link to={"/why-us"}>
-      <p className="text-white  px-auto lg:text-lg hover:bg-white rounded-sm  py-[1dvh] hover:text-black  px-[3dvw] ">Why US</p>
+      <p className=" text-white cursor-pointer py-2 px-1  xl:text-lg  hover:bg-white rounded-sm  lg:py-[1dvh] hover:text-black  lg:px-[3dvw] hover:font-semibold ">Why US</p>
       </Link>
+      
       <Navbar.Divider></Navbar.Divider>
       <Link to={"/services"}>
-     <p className="text-white  px-auto lg:text-lg hover:bg-white rounded-sm  py-[1dvh] hover:text-black  px-[3dvw] ">Services</p>
+      <p className=" text-white cursor-pointer py-2 px-1  xl:text-lg   hover:bg-white rounded-sm  lg:py-[1dvh] hover:text-black  lg:px-[3dvw] hover:font-semibold ">Services</p>
       </Link>
+    
       <Navbar.Divider></Navbar.Divider>
       <Link to={"/projects"}>
-     <p className="text-white  px-auto lg:text-lg hover:bg-white rounded-sm  py-[1dvh] hover:text-black  px-[3dvw] ">Projects</p>
+     <p className=" text-white cursor-pointer py-2 px-1  xl:text-lg   hover:bg-white rounded-sm  lg:py-[1dvh] hover:text-black  lg:px-[3dvw] hover:font-semibold ">Projects</p>
       </Link>
       <Navbar.Divider></Navbar.Divider>
       <Link to={"/about-us"}>
-     <p className="text-white  px-auto lg:text-lg hover:bg-white rounded-sm  py-[1dvh] hover:text-black  px-[3dvw] ">About Us</p>
+     <p className=" text-white cursor-pointer py-2 px-1  xl:text-lg   hover:bg-white rounded-sm  lg:py-[1dvh] hover:text-black  lg:px-[3dvw] hover:font-semibold ">About Us</p>
       </Link>
       <Navbar.Divider></Navbar.Divider>
       <Link to={"/contact-us"}>
-         <p className="text-white  px-auto lg:text-lg hover:bg-white rounded-sm  py-[1dvh] hover:text-black  px-[3dvw] ">Contact Us</p>
+         <p className=" text-white cursor-pointer py-2 px-1  xl:text-lg   hover:bg-white rounded-sm  lg:py-[1dvh] hover:text-black  lg:px-[3dvw] hover:font-semibold ">Contact Us</p>
       </Link>
 
     </>
   );
   return (
     <Navbar
+    collapseType={true}
       fluid={true}
-      className=" fixed w-full   top-0 z-10 bg-gray-600 md:bg-blue-950  backdrop-blur-10"
+      className=" sticky w-full   top-0 z-10 bg-black lg:bg-blue-950  backdrop-blur-10"
     >
       <Navbar.Container className="flex items-center  justify-between ">
-      <Navbar.Toggle className="!text-white" />
+      <p className="text-white  font-bold pl-3 text-2xl">KARTEL</p>
+
         <Navbar.Container className="flex items-center mx-auto ">
     
      
           <Navbar.Container
             tag="ul"
-            className="lg:flex hidden items-center justify-between py-[2%] "
+            className="lg:flex hidden items-center md:justify-between py-[1%] "
           >
            {
             navitems
            }
           </Navbar.Container>
-          <Navbar.Collapse collapseType="sidebar">
-            <Navbar.Container tag="ul" className="flex flex-col gap-5">
-            <Navbar.Link  linkName="Home" href="/why-us" />
-            <Navbar.Link linkName="Projects" />
-            <Navbar.Link linkName="Blogs" />
-            <Navbar.Link linkName="News" />
-            <Navbar.Link linkName="Resources" />
+          <Navbar.Collapse collapseType="sidebar" className="bg-black" >
+            <Navbar.Container tag="ul" className="flex flex-col  ">
+            {navitems}
             </Navbar.Container>
           </Navbar.Collapse>
         </Navbar.Container>
 
         <Navbar.Container className="flex gap-2">
-     
+        <span className="lg:hidden p-1 !text-white bg-white rounded-sm">
+        <Navbar.Toggle  /> 
+        </span>
 
         
         </Navbar.Container>

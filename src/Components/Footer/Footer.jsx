@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = () => {
     return (
-        <footer className="footer pr-[5%] pl-[5%] md:pl-[12%] py-[10%] md:py-[4%] bg-[#30246c]  text-white ">
+        <footer className="footer pr-[5%] pl-[5%] md:pl-[12%] py-[10%] md:py-[4%] bg-blue-950   text-white ">
     
        <aside >
         <img src="https://i.ibb.co/wK6HfpK/Katel-logo-round.png" alt="Logo" draggable="false" className='w-[30%] md:w-[40%] '  />
