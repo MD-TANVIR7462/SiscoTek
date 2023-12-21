@@ -7,7 +7,7 @@ import {
 const ProjectCard = ({img,name,title}) => {
     return (
         <Card
-          className=" w-full sm:w-[94%] md:w-[96%] lg:w-[90%]   overflow-hidden rounded-sm h-[40dvh]"
+          className=" w-full sm:w-[94%] md:w-[96%] lg:w-[90%]   overflow-hidden rounded-sm "
           imgSrc={img}
           imgSize="lg">
           <Card.Container className="space-y-3 p-6">
