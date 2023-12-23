@@ -1,5 +1,4 @@
 import ServicesBenner from "../ServicesPage/servicesComponents/ServicesBenner";
-import ServicesCard from "../ServicesPage/servicesComponents/ServicesCard";
 import TabsKeep from "./ProjectPageComponents/Tabs";
 
 const ProjectPage = () => {
@@ -7,6 +6,7 @@ const ProjectPage = () => {
     <div >
       <ServicesBenner
         img={"https://i.ibb.co/8rq16zQ/istockphoto-1469653478-2048x2048.jpg"}
+        text={'PROJECTS'}
       ></ServicesBenner>
       <p className="sm:w-[95%] md:w-[90%] lg:w-[80%] mx-auto  w-[98%] mb-[3%]">
         <div className="mt-[5%] mb-[4%]">

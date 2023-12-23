@@ -45,6 +45,7 @@ const NavBar = () => {
     </>
   );
   return (
+    
     <Navbar
       collapseType={true}
       fluid={true}
