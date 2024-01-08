@@ -2,7 +2,7 @@ import React from 'react';
 
 const NabBar1 = () => {
     return (
-        <footer className="footer items-center md:hidden   px-32 bg-[#f6f6f6] text-gray-500 py-4  ">
+        <footer className="footer items-center hidden lg:block  px-32 bg-[#f6f6f6] text-gray-500 py-4  ">
         <aside className="items-center grid-flow-col">
         
           <p>The Future of Construction. WorldWide.</p>

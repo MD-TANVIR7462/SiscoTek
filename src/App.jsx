@@ -9,7 +9,7 @@ import NabBar1 from "./Components/Navbar/NabBar-1";
 const App = () => {
   return (
     <div>
-      <NabBar1></NabBar1>
+      {/* <NabBar1></NabBar1> */}
       <NavBar></NavBar>
       <Outlet></Outlet>
       <Footer></Footer>
