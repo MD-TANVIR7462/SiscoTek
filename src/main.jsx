@@ -11,6 +11,7 @@ import HOME from "./Components/Home/HOME.jsx";
 import WhyUsPage from "./Components/WhyUsPage/WhyUsPage.jsx";
 import Services from "./Components/ServicesPage/Services.jsx";
 import ProjectPage from "./Components/ProjectsPage/ProjectPage.jsx";
+import AboutUsMain from "./Components/AboutUs/AboutUsMain.jsx";
 
 const ScrollTop = () => {
   const { pathname } = useLocation();
@@ -48,6 +49,10 @@ const router = createBrowserRouter([
         path: "/projects",
         element: <ProjectPage></ProjectPage>,
       },
+      {
+        path:"/about-us",
+        element:<AboutUsMain></AboutUsMain>
+      }
     ],
   },
 ]);
